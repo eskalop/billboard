@@ -1,0 +1,17 @@
+<body class='<%= controller.controller_name %>'>
+  <div id="banner">
+    <%= image_tag("logo.jpg") %>
+    <p2>dosko obyavleniy<p2>
+  </div>
+  <div id="columns">
+    <div id="side">
+      <ul>
+        <li><a href="/billboard/index">Home</a></li>
+        <li><a href="/ads">Ads</a></li>
+        <li><a href="/users">Users</a></li>
+      <ul>
+    </div>
+    <div id="main">
+      <%= yield %>
+    </div>
+</body>
